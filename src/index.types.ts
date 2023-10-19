@@ -27,6 +27,7 @@ export interface BaseMuiOtpInputProps {
   validateChar?: (character: string, index: number) => boolean
   onChange?: (value: string) => void
   onBlur?: (value: string, isCompleted: boolean) => void
+  disabled?: boolean
 }
 
 export type MuiOtpInputProps = BoxProps & BaseMuiOtpInputProps

@@ -35,6 +35,7 @@ const MuiOtpInput = React.forwardRef(
       validateChar = defaultValidateChar,
       className,
       onBlur,
+      disabled,
       ...restBoxProps
     } = props
     const initialValue = React.useRef(value)
@@ -288,6 +289,7 @@ const MuiOtpInput = React.forwardRef(
               onChange={handleOneInputChange}
               onKeyDown={handleOneInputKeyDown}
               onBlur={handleBlur}
+              disabled={disabled}
               // We use index as the order can't be moved
               // We can't use the value as it can be duplicated
               // eslint-disable-next-line react/no-array-index-key

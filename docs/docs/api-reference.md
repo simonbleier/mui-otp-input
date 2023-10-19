@@ -132,3 +132,15 @@ Unlike the normal type of a `TextField`, here you can manage a distinct placehol
 <MuiOtpInput TextFieldsProps={{ placeholder: '-' }} />
 <MuiOtpInput TextFieldsProps={{ placeholder: (index) => `i-${index}` }} />
 ```
+
+
+## `disabled`
+
+- Type: `boolean`
+- Default: `false`
+
+Disable the input.
+
+```tsx
+<MuiOtpInput disabled />
+```
